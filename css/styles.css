@@ -116,9 +116,6 @@ nav {
   gap: 60px;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 70px;
 }
 
 nav a {

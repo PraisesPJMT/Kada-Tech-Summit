@@ -313,3 +313,100 @@ footer {
   font-size: 1.2em;
   font-weight: bolder;
 }
+
+/* ABOUT PAGE*/
+
+.about {
+  text-align: center;
+}
+
+.email {
+  font-style: italic;
+}
+
+/* Organizers Styles */
+
+.organizers {
+  padding: 2em;
+}
+
+.organizers-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 2em;
+}
+
+.organizer {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: rgba(70, 70, 70, .2);
+  border-radius: 50px;
+}
+
+.organizer-log {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.org-image {
+  width: 80%;
+}
+
+.organizer-description {
+  padding: 1em;
+}
+
+
+/* Why KTS Styles */
+
+.kts-program {
+  background: #272a31 url("../images/pattern_bg.png");
+  background-repeat: repeat;
+  background-size: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.kts-wrapper {
+  background-color: rgba(70, 70, 70, .6);
+  border-radius: 10%;
+}
+
+.kts {
+  padding: 1.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.kts-description {
+  color: #fff;
+  padding: 1em;
+}
+
+.kts-headings {
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.kts-title {
+  font-size: 2em;
+}
+
+.kts-icon {
+  width: 200px;
+}

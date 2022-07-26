@@ -100,10 +100,23 @@ h3 {
 
 /* HEADER STYLES */
 
-header,
+.header-wrapper,
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+}
+
+.header-wrapper {
+  width: 100%;
+}
+
+nav {
+  display: none;
+}
+
+.header-logo {
+  display: none;
 }
 
 .mobile-menu-control {
@@ -111,6 +124,15 @@ nav {
   color: #272a31;
   float: right;
   margin: 25px 30px;
+}
+
+.close,
+.open {
+  float: right;
+}
+
+.close {
+  display: none;
 }
 
 nav {
@@ -152,8 +174,6 @@ nav {
 .headline-date {
   margin: 0.2em 0;
 }
-
-
 
 /* MAIN PROGRAM STYLES */
 
@@ -201,7 +221,7 @@ nav {
 }
 
 .button {
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .button a {
@@ -210,7 +230,6 @@ nav {
   background: #ec5242;
   font-weight: 700;
 }
-
 
 /* FEATURED SPEAKERS STYLES */
 
@@ -366,7 +385,6 @@ footer {
   padding: 1em;
 }
 
-
 /* Why KTS Styles */
 
 .kts-program {
@@ -379,7 +397,7 @@ footer {
 
 .kts-wrapper {
   background-color: rgba(70, 70, 70, .6);
-  border-radius: 10%;
+  border-radius: 50px;
 }
 
 .kts {
@@ -409,4 +427,170 @@ footer {
 
 .kts-icon {
   width: 200px;
+}
+
+@media (min-width: 768px) {
+  /* GLOBAL */
+
+  .header-wrapper,
+  .headline,
+  .section-content,
+  .speakers-wrapper,
+  .organizers-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /*  Header Styles */
+
+  .header-wrapper,
+  nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    color: #272a31;
+  }
+
+  .mobile-control {
+    display: none;
+  }
+
+  /* HEADER LOGO */
+  .header-logo {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+    width: 250px;
+  }
+  .h-logo-icon {
+    width: 30px;
+  }
+
+  .h-logo-name {
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+
+  .section-content {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .program-wrapper {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .program {
+    flex-direction: column;
+  }
+
+  .program-headings {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .program-title {
+    text-align: center;
+  }
+
+  .program-description {
+    width: 100%;
+  }
+
+  .speakers-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin: 30px auto;
+  }
+
+  /* ABOUT STYLES */
+
+  .organizer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .organizer-log {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .org-image {
+    width: 80%;
+  }
+
+  .organizer-description {
+    padding: 1em;
+    width: 70%;
+  }
+
+  /* Why KTS Styles */
+
+  .kts-program {
+    background: #272a31 url("../images/pattern_bg.png");
+    background-repeat: repeat;
+    background-size: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .kts-wrapper {
+    background-color: rgba(70, 70, 70, .6);
+    border-radius: 50px;
+  }
+
+  .kts {
+    padding: 1.5em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .kts-description {
+    color: #fff;
+    padding: 1em;
+    width: 70%;
+  }
+
+  .kts-headings {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .kts-title {
+    font-size: 2em;
+    display: block;
+  }
+
+  .kts-icon {
+    width: 200px;
+  }
 }

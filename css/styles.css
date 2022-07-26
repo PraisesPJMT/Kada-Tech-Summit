@@ -1,0 +1,315 @@
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-center {
+  align-items: center;
+}
+
+.heading {
+  gap: 15px;
+}
+
+.heading-line {
+  border: none;
+  background: #ec5242;
+  height: 4px;
+  width: 60px;
+}
+
+/* COLORS */
+.primary-color {
+  color: #272a31;
+}
+
+.secondary-color {
+  color: #ec5242;
+}
+
+.tertiary-color {
+  color: #f0f0f0;
+}
+
+.white {
+  color: #fff;
+}
+
+.dark {
+  color: #000;
+}
+
+/* TYPOGRAPHIC STYLES */
+
+h1,
+h2,
+h3,
+.headline-date {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+h2,
+h3 {
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.sub-title,
+.headline-date {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* HEADER STYLES */
+
+header,
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-control {
+  transform: scale(2);
+  color: #272a31;
+  float: right;
+  margin: 25px 30px;
+}
+
+nav {
+  gap: 20px;
+  align-items: center;
+}
+
+#license {
+  padding: 5px;
+  border: 3px solid #ec5242;
+}
+
+/* HEADLINE STYLES */
+
+.headline {
+  background: url("../images/bg-code.png") 0 0 no-repeat,
+              url("../images/bg-js.png") 60% 5% no-repeat,
+              url("../images/bg-idea.png") 100% 30% no-repeat,
+              url("../images/bg-css.png") 35% 50% no-repeat,
+              url("../images/bg-py.png") 5% 90% no-repeat,
+              url("../images/bg-pg.png") 60% 80% no-repeat,
+              url("../images/bg-html.png") 100% 100% no-repeat;
+  background-size: 80px, 80px, 80px, 80px, 60px, 80px, 80px;
+}
+
+.headline-overlay {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5em;
+}
+
+.headline-description {
+  margin: 20px 0;
+  border: 2px solid #fff;
+  background: rgba(240, 240, 240, 0.5);
+  padding: 1em;
+}
+
+.title,
+.headline-date {
+  margin: 0.2em 0;
+}
+
+
+
+/* MAIN PROGRAM STYLES */
+
+.main-program {
+  background: url("../images/hit-bg.png");
+  background-repeat: repeat;
+  background-size: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.main-program-heading {
+  color: #fff;
+}
+
+.section-content {
+  gap: 1em;
+  margin: 1.5em auto;
+}
+
+.program-wrapper {
+  background-color: rgba(70, 70, 70, .6);
+}
+
+.program {
+  padding: 1.5em .8em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.program-description {
+  color: #fff;
+  width: 60%;
+}
+
+.program-headings {
+  width: 40%;
+  align-items: center;
+  gap: 1em;
+}
+
+.program-icon {
+  width: 60px;
+}
+
+.button {
+  margin: 30px auto;
+}
+
+.button a {
+  padding: 1.2em;
+  color: #fff;
+  background: #ec5242;
+  font-weight: 700;
+}
+
+
+/* FEATURED SPEAKERS STYLES */
+
+.featured-speakers {
+  padding: 1.5em;
+}
+
+.speakers-wrapper {
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.speaker-images {
+  display: inline;
+  position: relative;
+}
+
+.speaker-icon {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ec5242;
+  border-radius: 50%;
+  position: absolute;
+  background: #f0f0f0 url("../images/bg-idea.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.speaker-image{
+  width: 150px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  float: left;
+}
+
+.speaker-content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.speaker-company {
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* PARTNERS STYLES */
+
+.partners {
+  background: #f0f0f0;
+  padding: 2em 2em;
+  gap: 1em;
+}
+
+.section-container {
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner {
+  width: 100px;
+}
+
+.google {
+  width: 128px;
+  height: 43px;
+}
+.facebook {
+  width: 128px;
+  height: 23px;
+}
+.microverse {
+  width: 180px;
+  height: 39px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  padding: 30px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+/* LOGO */
+.logo-footer {
+  gap: 0.4em;
+  align-items: center;
+  width: 250px;
+}
+.logo-icon {
+  width: 50px;
+}
+
+.logo-name {
+  font-size: 1.2em;
+  font-weight: bolder;
+}

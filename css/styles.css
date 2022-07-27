@@ -126,9 +126,6 @@ nav a {
 .header-logo-container {
   margin: 20px 30px;
 }
-.header-logo {
-  display: flex;
-}
 
 .mobile-menu-control {
   transform: scale(2);
@@ -198,11 +195,6 @@ nav a {
 
 .main-program-heading {
   color: #fff;
-}
-
-.section-content {
-  gap: 1em;
-  margin: 1.5em auto;
 }
 
 .program-wrapper {
@@ -352,6 +344,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1em;
+  margin: 1.5em auto;
 }
 
 /* FOOTER LOGO */
@@ -473,7 +467,7 @@ footer {
   gap: 1em;
 }
 
-.summit-title{
+.summit-title {
   text-align: center;
 }
 

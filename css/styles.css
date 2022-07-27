@@ -128,6 +128,13 @@ nav a {
   transition: color 1s, transform 0.5s;
 }
 
+.button a {
+  padding: 1.2em;
+  color: #fff;
+  background: #ec5242;
+  font-weight: 700;
+}
+
 nav a:hover {
   color: #ec5242;
   transform: scale(1.2);
@@ -235,13 +242,6 @@ nav a:hover {
 
 .button {
   margin: 50px auto;
-}
-
-.button a {
-  padding: 1.2em;
-  color: #fff;
-  background: #ec5242;
-  font-weight: 700;
 }
 
 /* FEATURED SPEAKERS STYLES */
@@ -614,6 +614,7 @@ footer {
 
   .program-title {
     text-align: center;
+    font-size: 1.3em;
   }
 
   .program-description {
@@ -690,9 +691,5 @@ footer {
 
   p {
     font-size: 1.2rem;
-  }
-
-  .program-title {
-    font-size: 1.3em;
   }
 }

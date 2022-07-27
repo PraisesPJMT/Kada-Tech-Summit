@@ -118,4 +118,6 @@ function createSpeakerWrapper() {
   return speakerWrapper;
 }
 
-speakersSection.appendChild(createSpeakerWrapper());
+if (speakersSection) {
+  speakersSection.appendChild(createSpeakerWrapper());
+}

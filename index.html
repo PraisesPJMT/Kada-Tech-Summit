@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <!--AOS Animation Links-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Native CSS & JS Links-->
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/main.js"></script>
@@ -68,7 +70,7 @@
             </div>
             <div class="section-content flex-column">
                 <!--Program 01- Lecture-->
-                <div class="program-wrapper">
+                <div class="program-wrapper" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
                     <div class="program flex">
                         <div class="program-headings flex">
                             <img src="images/lecture.png" alt="Lecture Icon" class="program-icon">
@@ -80,7 +82,7 @@
                     </div>
                 </div>
                 <!--Program 02- Tech Exhibition-->
-                <div class="program-wrapper">
+                <div class="program-wrapper" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
                     <div class="program flex">
                         <div class="program-headings flex">
                             <img src="images/tech-exhibition.png"  alt="Lecture Icon" class="program-icon">
@@ -91,7 +93,7 @@
                     </div>
                 </div>
                 <!--Program 03- Forum-->
-                <div class="program-wrapper">
+                <div class="program-wrapper" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
                     <div class="program flex">
                         <div class="program-headings flex">
                             <img src="images/forum.png"  alt="Lecture Icon" class="program-icon">
@@ -102,7 +104,7 @@
                     </div>
                 </div>
                 <!--Program 04- Workshop-->
-                <div class="program-wrapper">
+                <div class="program-wrapper" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
                     <div class="program flex">
                         <div class="program-headings flex">
                             <img src="images/workshop.png"  alt="Lecture Icon" class="program-icon">
@@ -113,7 +115,7 @@
                     </div>
                 </div>
                 <!--Program 05- Tech Ignite-->
-                <div class="program-wrapper">
+                <div class="program-wrapper" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
                     <div class="program flex">
                         <div class="program-headings flex">
                             <img src="images/tech-ignite.png"  alt="Lecture Icon" class="program-icon">
@@ -163,5 +165,9 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

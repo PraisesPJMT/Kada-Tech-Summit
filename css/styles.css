@@ -95,6 +95,10 @@ h3 {
   font-weight: 400;
 }
 
+.program-title {
+  font-size: 0.8em;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -121,6 +125,12 @@ nav {
 nav a {
   color: #272a31;
   font-size: 1.3em;
+  transition: color 1s, transform 0.5s;
+}
+
+nav a:hover {
+  color: #ec5242;
+  transform: scale(1.2);
 }
 
 .header-logo-container {
@@ -210,7 +220,7 @@ nav a {
 
 .program-description {
   color: #fff;
-  width: 60%;
+  width: 50%;
 }
 
 .program-headings {
@@ -329,6 +339,10 @@ footer {
   gap: 0.4em;
   align-items: center;
   width: 250px;
+}
+
+.header-logo:hover {
+  transform: scale(1.1);
 }
 
 .h-logo-icon {
@@ -554,12 +568,6 @@ footer {
   nav a {
     color: #272a31;
     font-size: 1.1em;
-    transition: color 1s, transform 0.5s;
-  }
-
-  nav a:hover {
-    color: #ec5242;
-    transform: scale(1.2);
   }
 
   .mobile-control {
@@ -572,10 +580,6 @@ footer {
     gap: 0.4em;
     align-items: center;
     width: 250px;
-  }
-
-  .header-logo:hover {
-    transform: scale(1.1);
   }
 
   .h-logo-icon {
@@ -614,6 +618,7 @@ footer {
 
   .program-description {
     width: 100%;
+    text-align: center;
   }
 
   .speakers-wrapper {
@@ -685,5 +690,9 @@ footer {
 
   p {
     font-size: 1.2rem;
+  }
+
+  .program-title {
+    font-size: 1.3em;
   }
 }

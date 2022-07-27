@@ -40,21 +40,21 @@ const speakerCatalog = [
             + 'connect 1 million people with remote jobs by 2030.',
   },
   {
-    name: 'Nkemdilim Uwaje Begho',
-    photo: 'images/speaker-c.jpg',
-    company: 'Founder, Future Software Resources',
-    description: 'Begho founded Future Software Resources Ltd, a website '
-            + 'design & web-solution provider located in Lagos, Nigeria in 2008. '
-            + 'The company also provides online marketing, Search Engine '
-            + 'Optimization (SEO), and more',
-  },
-  {
     name: 'Olaoluwa Samuel-Biyi',
     photo: 'images/speaker-d.jpg',
     company: 'Co-founder, SureGifts',
     description: 'Olaoluwa Samuel-Biyi is Co-founder at SureGifts, a '
             + 'revolutionary online gifting platform looking to disrupt '
             + 'traditional gifting systems in Nigeria.',
+  },
+  {
+    name: 'Nkemdilim Uwaje Begho',
+    photo: 'images/speaker-c.jpg',
+    company: 'Founder, Future Software Resources',
+    description: 'Begho founded Future Software Resources Ltd, a website '
+        + 'design & web-solution provider located in Lagos, Nigeria in 2008. '
+        + 'The company also provides online marketing, Search Engine '
+        + 'Optimization (SEO), and more',
   },
   {
     name: 'Clarisse Iribagize',

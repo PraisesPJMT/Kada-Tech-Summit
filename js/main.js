@@ -81,6 +81,8 @@ function createSpeakerWrapper() {
   speakerCatalog.forEach((speaker) => {
     const speakerContainer = document.createElement('div');
     speakerContainer.className = 'speaker flex';
+    speakerContainer.setAttribute('data-aos', 'zoom-in');
+    speakerContainer.setAttribute('data-aos-duration', '1000');
 
     const speakerImageContainer = document.createElement('div');
     const speakerIcon = document.createElement('div');

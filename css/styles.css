@@ -1,5 +1,7 @@
 /* GLOBAL STYLES */
 
+@import URL('http://fonts.cdnfonts.com/css/cocogoose');
+
 * {
   margin: 0;
   padding: 0;
@@ -72,7 +74,7 @@ h1,
 h2,
 h3,
 .headline-date {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
 h1 {
@@ -96,7 +98,7 @@ h3 {
 }
 
 .program-title {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .bold {
@@ -104,6 +106,10 @@ h3 {
 }
 
 /* HEADER STYLES */
+
+header {
+  height: 70px;
+}
 
 .header-wrapper,
 nav {
@@ -120,6 +126,7 @@ nav {
   gap: 60px;
   align-items: center;
   justify-content: center;
+  margin-top: 70px;
 }
 
 nav a {
@@ -142,17 +149,17 @@ nav a:hover {
 
 .header-logo-container {
   margin: 20px 30px;
+ display: none;
 }
 
 .mobile-menu-control {
   transform: scale(2);
   color: #272a31;
-  float: right;
   margin: 25px 30px;
   cursor: pointer;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .close,
@@ -560,9 +567,14 @@ footer {
     padding: 0 30px;
   }
 
+  .header-logo-container {
+    display: flex;
+  }
+
   nav {
     display: flex;
     gap: 30px;
+    margin-top: 0;
   }
 
   nav a {

@@ -25,6 +25,12 @@ the summit website called the **KADA TECH SUMMIT 2022**.
 - CSS (stylelint)
 - JavaScript (eslint)
 
+## GitHub Pages Deployment
+The project was successfully deployed to GitHub Pages. The live project can be 
+viewed at the followinglinks:<br><br>
+[KADA Tech Summit 2022](https://praisespjmt.github.io/Kada-Tech-Summit/) <br>
+URL Link: [https://praisespjmt.github.io/Kada-Tech-Summit/](https://praisespjmt.github.io/Kada-Tech-Summit/)
+
 ## Project Development Phases
 
 The project was developed within three (3) days with the following mile-stones as a roadmap;

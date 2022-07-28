@@ -1,0 +1,678 @@
+/* GLOBAL STYLES */
+
+@import URL('http://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-center {
+  align-items: center;
+}
+
+.heading {
+  gap: 15px;
+  text-align: center;
+}
+
+.heading-line {
+  border: none;
+  background: #ec5242;
+  height: 4px;
+  width: 60px;
+}
+
+/* COLORS */
+.primary-color {
+  color: #272a31;
+}
+
+.secondary-color {
+  color: #ec5242;
+}
+
+.tertiary-color {
+  color: #f0f0f0;
+}
+
+.white {
+  color: #fff;
+}
+
+.dark {
+  color: #000;
+}
+
+/* TYPOGRAPHIC STYLES */
+
+h1,
+h2,
+h3,
+.headline-date {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+h2,
+h3 {
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.sub-title,
+.headline-date {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.program-title {
+  font-size: 1em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* HEADER STYLES */
+
+header {
+  height: 70px;
+}
+
+.upper-nav {
+  display: none;
+}
+
+.header-wrapper,
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper {
+  width: 100%;
+}
+
+nav {
+  display: none;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+nav a {
+  color: #272a31;
+  font-size: 1.3em;
+  transition: color 1s, transform 0.5s;
+}
+
+.button a {
+  padding: 1.2em;
+  color: #fff;
+  background: #ec5242;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #ec5242;
+  transform: scale(1.2);
+}
+
+.header-logo-container {
+  margin: 20px 30px;
+  display: none;
+}
+
+.mobile-menu-control {
+  transform: scale(2);
+  color: #272a31;
+  margin: 25px 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.close,
+.open {
+  float: right;
+}
+
+.close {
+  display: none;
+}
+
+#license {
+  padding: 6px;
+  border: 3px solid #ec5242;
+  font-size: 0.9em;
+  color: #ec5242;
+}
+
+/* HEADLINE STYLES */
+
+.headline {
+  background:
+    url("../images/bg-code.png") 0 0 no-repeat,
+    url("../images/bg-js.png") 60% 5% no-repeat,
+    url("../images/bg-idea.png") 100% 30% no-repeat,
+    url("../images/bg-css.png") 35% 50% no-repeat,
+    url("../images/bg-py.png") 5% 90% no-repeat,
+    url("../images/bg-pg.png") 60% 80% no-repeat,
+    url("../images/bg-html.png") 100% 100% no-repeat;
+  background-size: 80px, 80px, 80px, 80px, 60px, 80px, 80px;
+}
+
+.headline-overlay {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5em;
+}
+
+.headline-description {
+  margin: 20px 0;
+  border: 2px solid #fff;
+  background: rgba(240, 240, 240, 0.5);
+  padding: 1em;
+}
+
+.title,
+.headline-date {
+  margin: 0.2em 0;
+}
+
+/* MAIN PROGRAM STYLES */
+
+.main-program {
+  background: url("../images/hit-bg.png");
+  background-repeat: repeat;
+  background-size: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.main-program-heading {
+  color: #fff;
+}
+
+.program-wrapper {
+  background-color: rgba(70, 70, 70, 0.6);
+}
+
+.program {
+  padding: 1.5em 0.8em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.program-description {
+  color: #fff;
+  width: 50%;
+}
+
+.program-headings {
+  width: 40%;
+  align-items: center;
+  gap: 1em;
+}
+
+.program-icon {
+  width: 60px;
+}
+
+.button {
+  margin: 50px auto;
+}
+
+/* FEATURED SPEAKERS STYLES */
+
+.featured-speakers {
+  padding: 1.5em;
+}
+
+.speakers-wrapper {
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.speaker-images {
+  display: inline;
+  position: relative;
+}
+
+.speaker-icon {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ec5242;
+  border-radius: 50%;
+  position: absolute;
+  background: #f0f0f0 url("../images/bg-idea.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.speaker-image {
+  width: 150px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  float: left;
+}
+
+.speaker-content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.speaker-company {
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* PARTNERS STYLES */
+
+.partners {
+  background: #f0f0f0;
+  padding: 2em 2em;
+  gap: 1em;
+}
+
+.section-container {
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner {
+  width: 100px;
+}
+
+.google {
+  width: 128px;
+  height: 43px;
+}
+
+.facebook {
+  width: 128px;
+  height: 23px;
+}
+
+.microverse {
+  width: 180px;
+  height: 39px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  padding: 30px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background: #272a31;
+}
+
+/* HEADER LOGO */
+.header-logo {
+  display: flex;
+  gap: 0.4em;
+  align-items: center;
+  width: 250px;
+}
+
+.header-logo:hover {
+  transform: scale(1.1);
+}
+
+.h-logo-icon {
+  width: 30px;
+}
+
+.h-logo-name {
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+
+.section-content {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1.5em auto;
+}
+
+/* FOOTER LOGO */
+.logo-footer {
+  gap: 0.4em;
+  align-items: center;
+  width: 250px;
+}
+
+.logo-icon {
+  width: 50px;
+}
+
+.logo-name {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+/* ABOUT PAGE */
+
+.about {
+  text-align: center;
+}
+
+.email {
+  font-style: italic;
+}
+
+/* KTS Logo Section Styles */
+
+.desktop-logo-description {
+  display: none;
+}
+
+.about-kts-logo {
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.logo-description {
+  margin: 2em;
+  text-align: center;
+}
+
+.kts-logo-wrapper {
+  border: 1px solid #d3d3d3;
+  padding: 1.8em;
+  margin: 2.5em auto;
+  display: flex;
+  justify-content: center;
+}
+
+.kts-logo {
+  gap: 0.4em;
+  align-items: center;
+  width: 250px;
+}
+
+.kts-logo-icon {
+  width: 80px;
+}
+
+.kts-logo-name {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.1em;
+}
+
+.kts-logo-date {
+  font-size: 0.5em;
+  border-top: 1px solid #272a31;
+  border-bottom: 1px solid #272a31;
+  padding: 0.3em 0.9em;
+}
+
+/* PAST SUMMIT STYLES */
+
+.past-summit {
+  padding: 2em;
+  gap: 1em;
+}
+
+.summit-title {
+  text-align: center;
+}
+
+.past-summit-wrapper {
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.summit {
+  width: 100%;
+  position: relative;
+}
+
+.summit-image {
+  width: 100%;
+}
+
+.summit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 99%;
+  background: rgba(236, 82, 66, 0.5);
+}
+
+.summit-year {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.summit-location {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+  padding: 1em;
+}
+
+.past-summit-text {
+  margin: 10px auto;
+  font-size: 1.1em;
+}
+
+@media (min-width: 768px) {
+  /* GLOBAL */
+
+  .header-wrapper,
+  .headline,
+  .section-content,
+  .speakers-wrapper,
+  .organizers-wrapper,
+  .past-summit-wrapper,
+  .media-links {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /*  Header Styles */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-wrapper,
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+
+    /* padding: 0 30px; */
+  }
+
+  .upper-nav {
+    background: #272a31;
+    height: 25px;
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+  }
+
+  .media-links {
+    justify-content: end;
+    gap: 15px;
+  }
+
+  nav a {
+    color: #272a31;
+    font-size: 1.1em;
+  }
+
+  .media-links a {
+    color: #fff;
+  }
+
+  .header-logo-container {
+    display: flex;
+  }
+
+  nav {
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  .mobile-control {
+    display: none;
+  }
+
+  /* HEADER LOGO */
+  .header-logo {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+    width: 250px;
+  }
+
+  .h-logo-icon {
+    width: 30px;
+  }
+
+  .h-logo-name {
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+
+  .section-content {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .program-wrapper {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .program {
+    flex-direction: column;
+  }
+
+  .program-headings {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .program-title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .program-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .speakers-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin: 30px auto;
+  }
+
+  /* KTS Logo Section Styles */
+
+  .desktop-logo-description {
+    display: block;
+  }
+
+  /* PAST SUMMIT STYLES */
+
+  .past-summit-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .summit {
+    width: 50%;
+    position: relative;
+  }
+
+  .summit-year {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+  }
+
+  .summit-location {
+    font-size: 1.4em;
+  }
+
+  .past-summit-text {
+    margin: 10px auto;
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .button a {
+    background: none;
+    text-decoration: underline;
+  }
+}

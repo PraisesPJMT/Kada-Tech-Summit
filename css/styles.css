@@ -422,30 +422,32 @@ footer {
 
 .kts-logo-wrapper {
   border: 1px solid #d3d3d3;
-  padding: 2em;
+  padding: 1.8em;
   margin: 2.5em auto;
+  display: flex;
+  justify-content: center;
 }
 
 .kts-logo {
   gap: 0.4em;
   align-items: center;
-  width: 350px;
+  width: 250px;
 }
 
 .kts-logo-icon {
-  width: 100px;
+  width: 80px;
 }
 
 .kts-logo-name {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 2em;
+  font-size: 1.1em;
 }
 
 .kts-logo-date {
-  font-size: 0.9em;
+  font-size: 0.5em;
   border-top: 1px solid #272a31;
   border-bottom: 1px solid #272a31;
-  padding: 0.3em 1.1em;
+  padding: 0.3em 0.9em;
 }
 
 /* PAST SUMMIT STYLES */

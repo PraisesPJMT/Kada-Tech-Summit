@@ -26,8 +26,7 @@ const speakerCatalog = [
     company: 'Founder, AppsTech',
     description: 'Enonchong, a Cameroonian national, is the founder '
             + 'and CEO of AppsTech, a Bethesda, Maryland-based global provider'
-            + ' of enterprise application solutions. AppsTech, which was founded '
-            + 'in 1999 now has clients in more than 40 countries on 3 continents. ',
+            + ' of enterprise application solutions.',
   },
   {
     name: 'Ariel Camus',
@@ -36,8 +35,7 @@ const speakerCatalog = [
     description: 'Ariel is an entrepreneur who has lived in San '
             + 'Francisco, Boston, Argentina, Spain, Vietnam, and Indonesia. '
             + 'He is currently the founder of Microverse, an online school '
-            + 'for remote software developers with a mission to educate and '
-            + 'connect 1 million people with remote jobs by 2030.',
+            + 'for remote software developers.',
   },
   {
     name: 'Olaoluwa Samuel-Biyi',

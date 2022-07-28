@@ -38,6 +38,7 @@ a {
 
 .heading {
   gap: 15px;
+  text-align: center;
 }
 
 .heading-line {
@@ -402,90 +403,49 @@ footer {
   font-style: italic;
 }
 
-/* Organizers Styles */
+/* KTS Logo Section Styles */
 
-.organizers {
+.desktop-logo-description {
+  display: none;
+}
+
+.about-kts-logo {
+  justify-content: center;
+  align-items: center;
   padding: 2em;
 }
 
-.organizers-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  gap: 2em;
+.logo-description {
+  margin: 2em;
+  text-align: center;
 }
 
-.organizer {
-  flex-direction: column;
-  justify-content: center;
-  gap: 1em;
-  padding: 1em;
-  background-color: rgba(70, 70, 70, 0.2);
-  border-radius: 50px;
+.kts-logo-wrapper {
+  border: 1px solid #d3d3d3;
+  padding: 2em;
+  margin: 2.5em auto;
 }
 
-.organizer-log {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  border: 2px solid #fff;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
+.kts-logo {
+  gap: 0.4em;
   align-items: center;
-  justify-content: center;
+  width: 350px;
 }
 
-.org-image {
-  width: 80%;
+.kts-logo-icon {
+  width: 100px;
 }
 
-.organizer-description {
-  padding: 1em;
-}
-
-/* Why KTS Styles */
-
-.kts-program {
-  background: #272a31 url("../images/pattern_bg.png");
-  background-repeat: repeat;
-  background-size: 20px;
-  padding: 20px;
-  align-items: center;
-}
-
-.kts-wrapper {
-  background-color: rgba(70, 70, 70, 0.6);
-  border-radius: 50px;
-}
-
-.kts {
-  padding: 1.5em;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-
-.kts-description {
-  color: #fff;
-  padding: 1em;
-}
-
-.kts-headings {
-  width: 40%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-
-.kts-title {
+.kts-logo-name {
+  font-family: 'Archivo Black', sans-serif;
   font-size: 2em;
 }
 
-.kts-icon {
-  width: 200px;
+.kts-logo-date {
+  font-size: 0.9em;
+  border-top: 1px solid #272a31;
+  border-bottom: 1px solid #272a31;
+  padding: 0.3em 1.1em;
 }
 
 /* PAST SUMMIT STYLES */
@@ -672,37 +632,10 @@ footer {
     margin: 30px auto;
   }
 
-  /* ABOUT STYLES */
+  /* KTS Logo Section Styles */
 
-  .organizer {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .organizer-description {
-    padding: 1em;
-    width: 70%;
-  }
-
-  /* Why KTS Styles */
-
-  .kts-wrapper {
-    margin-top: 30px;
-  }
-
-  .kts {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .kts-title {
-    font-size: 2em;
+  .desktop-logo-description {
     display: block;
-  }
-
-  .kts-icon {
-    width: 200px;
   }
 
   /* PAST SUMMIT STYLES */

@@ -176,8 +176,10 @@ nav a:hover {
 }
 
 #license {
-  padding: 5px;
+  padding: 6px;
   border: 3px solid #ec5242;
+  font-size: 0.9em;
+  color: #ec5242;
 }
 
 /* HEADLINE STYLES */
